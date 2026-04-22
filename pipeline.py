@@ -114,7 +114,7 @@ def evaluate_model(model, X_test, y_test, model_name):
 def run_pipeline(file_path):
 
     print(" Running churn pipeline with Logistic Regression + XGBoost")  # ✅ IMPORTANT CHANGE
-
+    print("Feature branch: XGBoost model improvement applied")
     df = load_data(file_path)
     df = preprocess_data(df)
     df = feature_engineering(df)
